@@ -40,6 +40,9 @@ Whether you are a finance enthusiast, a student, or a developer curious about fi
 
 3. **Download Data:**
    - Download the dataset (e.g., 'stocks.csv') and place it in the project directory.
+   - Note: This code has been tailored for monthly financial data. Please ensure to adapt the    
+     code accordingly if your dataset is based on a different frequency (e.g., daily, weekly) to 
+     achieve accurate and meaningful results. 
 
 4. **Run the Animation:**
    - Open a terminal and navigate to the project directory.
