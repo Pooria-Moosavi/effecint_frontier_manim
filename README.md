@@ -32,6 +32,11 @@ Whether you are a finance enthusiast, a student, or a developer curious about fi
 
 2. **Install Dependencies:**
    - Make sure you have Manim installed. Follow the instructions in the [Manim documentation](https://docs.manim.community/en/stable/installation.html) for installation.
+     
+   - numpy, pandas, scipy and matplotlib libraries are also necessary for this code functionality:
+   ```bash
+   pip install numpy pandas scipy matplotlib
+   ```
 
 3. **Download Data:**
    - Download the dataset (e.g., 'stocks.csv') and place it in the project directory.
