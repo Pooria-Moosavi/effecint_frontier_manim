@@ -148,12 +148,12 @@ class EFrontier(Scene):
 
         ef = Tex('Efficient Frontier').to_edge(UP)
         mr = Text("Min. Volatility Portfolio\n"
-                  "Return: 0.055\n"
-                  "Risk: 0.163",
+                  "Return: " + str(portfo_return(optm['x'].round(3)).round(3))
+                  +"\nRisk: " + str(portfo_volatility(optm['x'].round(3)).round(3)),
                   color=GREEN_C, font_size=14).move_to(grid.c2p(0.163, 0.055)).shift(UP * 0.6)
         ms = Text("Max. Sharpe Portfolio\n"
-                  "Return: 0.292\n"
-                  "Risk: 0.428"
+                  "Return: " + str(portfo_return(opt['x'].round(3)).round(3))
+                  +"\nRisk: " + str(portfo_volatility(opt['x'].round(3)).round(3))
                   , color=TEAL_C, font_size=14).move_to(grid.c2p(0.428, 0.292)).shift(DOWN * 0.6)
 
         self.play(FadeIn(dot1), func_rate=linear)
@@ -178,32 +178,5 @@ class EFrontier(Scene):
         self.play(Unwrite(VGroup(ef, mr, ms)))
         self.play(FadeOut(min_risk, max_shrpe))
         self.play(Uncreate(VGroup(grid, grid_labels)))
-
-        wei_min = Text('Min. Volatility Portfolio Weights:\n\n'
-                       '            TEVA : 19.7%\n\n'
-                       '            IBM  : 20.4%\n\n'
-                       '            UAA  : 0%\n\n'
-                       '            WMT  : 54.9%\n\n'
-                       '            XOM  : 5%\n\n'
-                       '            TSLA : 0%'
-                      , font_size=24, color=GREEN_A).move_to(UP)
-
-        self.play(Write(wei_min))
-        self.wait(4)
-        self.play(Unwrite(wei_min))
-
-        wei_max = Text('Max. Sharpe Portfolio Weights:\n\n'
-                       '          TEVA : 19.7%\n\n'
-                       '          IBM  : 20.4%\n\n'
-                       '          UAA  : 0%\n\n'
-                       '          WMT  : 54.9%\n\n'
-                       '          XOM  : 5%\n\n'
-                       '          TSLA : 0%'
-                       , font_size=24, color=GREEN_A).move_to(UP)
-
-        self.play(Write(wei_max))
-        self.wait(4)
-        self.play(Unwrite(wei_max))
-
 
 
