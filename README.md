@@ -55,10 +55,7 @@ Whether you are a finance enthusiast, a student, or a developer curious about fi
    - The plot will show different portfolios with varying risk and returns, color-coded based on their Sharpe ratio.
    - The animation includes information about the Minimum Volatility Portfolio and Maximum Sharpe Ratio Portfolio.
 
-6. **Interact with the Animation:**
-   - The animation will display key information about the portfolios and their weights.
-   - Watch for the Efficient Frontier, Minimum Volatility Portfolio, and Maximum Sharpe Ratio Portfolio.
 
-7. **Additional Information:**
+6. **Additional Information:**
    - Feel free to explore the code and customize it according to your preferences.
    - Check the comments in the code for detailed explanations of the financial concepts and calculations.
