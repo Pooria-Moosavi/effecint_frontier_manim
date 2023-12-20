@@ -14,7 +14,6 @@ In this project, we leverage financial data from a CSV file (e.g., 'stocks.csv')
 
 - **Portfolio Optimization:** Explore the Minimum Volatility Portfolio and the Maximum Sharpe Ratio Portfolio, highlighting key points on the Efficient Frontier. The animation provides detailed information about these portfolios, including their expected returns, risks, and composition.
 
-- **Weights and Composition:** Gain insights into the composition of the optimized portfolios by examining the weights assigned to each asset. The script visually presents the allocation of assets in the Minimum Volatility and Maximum Sharpe Ratio Portfolios.
 
 ### Getting Started
 
